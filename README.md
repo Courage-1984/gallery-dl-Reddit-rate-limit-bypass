@@ -35,8 +35,8 @@ in the same directory as said executable.
       * set ``http://localhost:6414/`` as "redirect uri"
       * solve the "I'm not a rebot" reCATCHA if needed
       * click "create app"
-8. Copy the client id (third line, underneath your application's name and "installed app") and put it in your configuration file as the ``"client-id"``
-9. In your configuration file use "``Python:<application name>:v1.0 (by /u/<username>)``" as ``user-agent`` and replace ``<application name>`` and ``<username>`` accordingly.
+8. Copy the client id (third line, underneath your application's name and "installed app") and put it in your configuration file as the ``"client-id"``. Save your configuration file.
+9. In your configuration file use "``Python:<application name>:v1.0 (by /u/<username>)``" as ``user-agent`` and replace ``<application name>`` and ``<username>`` accordingly. Save your configuration file.
 10. Clear your cache by running
 ```html
   gallery-dl --clear-cache reddit
@@ -50,8 +50,10 @@ to delete any remaining ``access-token`` entries.
 and allowing your `<application name>` to connect with your reddit account.
 
 12. You will then be redirected to a page which will present you with your `refresh-token`
-13. Copy the `refresh-token` in your browser and place it in your configuration file as the ``"refresh-token"``
+13. Copy the `refresh-token` in your browser and place it in your configuration file as the ``"refresh-token"``. Save your configuration file.
 14. Remember all three the new values we placed in your configuration file (``"client-id"``, ``"user-agent"`` and ``"refresh-token"``) should be enclosed in dubble quotations ""
+
+***
 
 The Reddit config part in your configuration file should look something like:
 ```json
@@ -78,6 +80,8 @@ Voila!
 
 Now you should be able to run "gallery-dl.exe" to download reddit posts or whole subreddits without rate limmiting!
 
+***
+
 Basic example gallery-dl command to run in your cli:
 ```txt
   gallery-dl URL
@@ -93,6 +97,7 @@ then
 ```
 etc. etc.
 
-For original documentation look the "```extractor.reddit.client-id & .user-agent```" section in the following file: [configuration.rst](https://github.com/mikf/gallery-dl/blob/master/docs/configuration.rst)
+***
 
+For original documentation look the "```extractor.reddit.client-id & .user-agent```" section in the following file: [configuration.rst](https://github.com/mikf/gallery-dl/blob/master/docs/configuration.rst)
 
