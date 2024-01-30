@@ -92,3 +92,7 @@ then
   gallery-dl --range 1-200 URL
 ```
 etc. etc.
+
+For original documentation look the "```extractor.reddit.client-id & .user-agent```" section in the following file: [configuration.rst](https://github.com/mikf/gallery-dl/blob/master/docs/configuration.rst)
+
+
